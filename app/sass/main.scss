@@ -1,0 +1,53 @@
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, system, sans-serif;
+}
+
+#content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  height: 75px;
+  margin-bottom: 0.5em;
+  font-size: 5em;
+}
+
+a {
+  color: #3f894a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+  &:hover {
+    color: #27552e;
+    border-bottom: 1px solid #27552e;
+  }
+}
+
+.main {
+  @include outer-container;
+  padding: 50px;
+
+  .header {
+    @include span-columns(12);
+    @include omega();
+  }
+
+  .footer {
+    @include span-columns(12);
+    @include omega();
+  }
+
+  .side-nav {
+    @include span-columns(4);
+  }
+
+  .content {
+    @include span-columns(8);
+    @include omega();
+  }
+}
