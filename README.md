@@ -1,10 +1,10 @@
 # elm-depot
 
-This is my attempt at re-writing the front-end of the Habitat Depot in Elm.
+This is my attempt at re-writing the front-end of the [Habitat](https://www.habitat.sh) Depot in Elm.
 
 ## Tools used
 
-This app is compiled and run using brunch. Here is a quick description of the file structure:
+This app is compiled and run using [brunch.io](http://brunch.io). Here is a quick description of the file structure:
 
     app                              # This directory contains the code that makes up the app
         assets                       # Everything in here is automatically copied to the public directory by brunch
