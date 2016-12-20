@@ -9,7 +9,8 @@ This app is compiled and run using [brunch.io](http://brunch.io). Here is a quic
         elm                          # Elm source goes in here, to be compiled by brunch
         js                           # Any non-elm javascript goes here
         sass                         # sass stylesheets go here, to be compiled by brunch
-    public                           # This is where brunch puts everything that it compiles, and the brunch server serves it up from this directory
+    public                           # This is where brunch puts everything that it compiles, and the brunch server
+                                     # serves it up from this directory
 
 
 To run this app for development, first install all the dependencies.
