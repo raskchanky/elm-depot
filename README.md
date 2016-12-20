@@ -4,13 +4,13 @@ This is my attempt at re-writing the front-end of the [Habitat](https://www.habi
 
 This app is compiled and run using [brunch.io](http://brunch.io). Here is a quick description of the file structure:
 
-    app                              # This directory contains the code that makes up the app
-        assets                       # Everything in here is automatically copied to the public directory by brunch
-        elm                          # Elm source goes in here, to be compiled by brunch
-        js                           # Any non-elm javascript goes here
-        sass                         # sass stylesheets go here, to be compiled by brunch
+    app                              # This directory contains the code that makes up the app.
+        assets                       # Everything in here is automatically copied to the public directory by brunch.
+        elm                          # Elm source goes in here, to be compiled by brunch.
+        js                           # Any non-elm javascript goes here.
+        sass                         # sass stylesheets go here, to be compiled by brunch.
     public                           # This is where brunch puts everything that it compiles, and the brunch server
-                                     # serves it up from this directory
+                                     # serves it up from this directory.
 
 
 To run this app for development, first install all the dependencies.
