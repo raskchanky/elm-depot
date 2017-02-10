@@ -28,6 +28,12 @@ a {
   }
 }
 
+li.nav-link {
+  display: inline;
+  list-style-type: none;
+  padding-right: 10px;
+}
+
 .main {
   @include outer-container;
   padding: 50px;
@@ -35,6 +41,17 @@ a {
   .header {
     @include span-columns(12);
     @include omega();
+  }
+
+  .logo {
+    @include span-columns(4 of 12);
+    width: 320px;
+    height: 106px;
+    background: url('/images/habitat-logo.svg') no-repeat left 40%;
+  }
+
+  .links {
+    @include span-columns(8 of 12);
   }
 
   .footer {

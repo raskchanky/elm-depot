@@ -1,7 +1,7 @@
 module Main exposing (main)
 
-import Html exposing (Html, div, text, program)
-import Html.Attributes exposing (class)
+import Html exposing (Html, a, ul, li, div, text, program)
+import Html.Attributes exposing (class, href)
 
 
 main : Program Never Model Msg
@@ -99,20 +99,10 @@ subscriptions model =
     Sub.none
 
 
-
--- This is the old content area I had
--- div [ class "main" ]
---     [ div [ class "header" ]
---         [ text "Search packages" ]
---     , div [ class "packages" ]
---         (displayPackages model.packages)
---     ]
-
-
 header : Html Msg
 header =
     div [ class "header" ]
-        [ text "This is the header" ]
+        [ logo, links ]
 
 
 footer : Html Msg
@@ -131,6 +121,25 @@ content : Html Msg
 content =
     div [ class "content" ]
         [ text "This is the main content area" ]
+
+
+logo : Html Msg
+logo =
+    div [ class "logo" ]
+        []
+
+
+links : Html Msg
+links =
+    div [ class "links" ]
+        [ ul [ class "main-nav" ]
+            [ li [ class "nav-link" ] [ text "Search Packages" ]
+            , li [ class "nav-link" ] [ text "Docs" ]
+            , li [ class "nav-link" ] [ text "Tutorials" ]
+            , li [ class "nav-link" ] [ text "Community" ]
+            , li [ class "nav-link" ] [ text "Sign In" ]
+            ]
+        ]
 
 
 displayPackages : List Package -> List (Html Msg)
